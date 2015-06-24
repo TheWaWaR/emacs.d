@@ -10,7 +10,9 @@
 (when (version<= emacs-version "24")
   (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(dolist (subdir-name '("lisp" "my-lisp"))
+  (add-to-list 'load-path (expand-file-name subdir-name user-emacs-directory)))
+
 (require 'init-benchmarking) ;; Measure startup time
 
 (defconst *spell-check-support-enabled* nil) ;; Enable with t if you prefer
@@ -148,6 +150,10 @@
             (message "init completed in %.2fms"
                      (sanityinc/time-subtract-millis after-init-time before-init-time))))
 
+
+
+(require 'my-funcs)
+(require 'my-key-bindings)
 
 (provide 'init)
 
