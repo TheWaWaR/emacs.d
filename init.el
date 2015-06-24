@@ -1,4 +1,6 @@
 
+(menu-bar-mode -1)
+
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
 

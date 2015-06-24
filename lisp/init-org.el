@@ -323,7 +323,7 @@ typical word processor."
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((R . t)
-     (ditaa . t)
+     ; (ditaa . t)
      (dot . t)
      (emacs-lisp . t)
      (gnuplot . t)
