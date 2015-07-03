@@ -46,7 +46,7 @@
 
 (require 'init-frame-hooks)
 (require 'init-xterm)
-(require 'init-themes)
+;; (require 'init-themes)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-proxies)
@@ -154,6 +154,7 @@
 
 (require 'my-funcs)
 (require 'my-key-bindings)
+(require 'my-hooks)
 
 (provide 'init)
 
